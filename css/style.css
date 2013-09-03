@@ -20,8 +20,13 @@ h2 {
 
 /**************** MENU HEADER **************/
 
-#menu {
+#wrapper {
 	width: 100%;
+	background: #B71C4E;
+}
+#menu {
+	width: 990px;
+	margin: auto;
 	height: 45px;
 	background: #B71C4E;
 	z-index: 9999 !important;
@@ -43,7 +48,7 @@ h2 {
 
 #nav {
 	float: left;
-	width: 600px;
+	width: 585px;
 	height: 45px;
 }
 
@@ -59,11 +64,16 @@ h2 {
 }
 
 .navigation a {
+	background: url("../images/adoption.png") no-repeat transparent;
+	color: #FFFFFF;
 	line-height: 52px;
-	text-decoration: none;
-	color: #FFF;
 	opacity: 0.7;
-	padding: 0 7px;
+	padding: 2px 7px 12px 40px;
+	position: relative;
+	text-decoration: none;
+	top: -6px;
+	background-size: 32px 24px;
+	background-position: 0 -1px;
 }
 
 .navigation a:hover {
@@ -72,19 +82,7 @@ h2 {
 
 .navigation .active {
 	border-bottom: 5px solid #63C2D0;
-	padding-bottom: 6px;
 	opacity: 1;
-}
-
-.navigation .active img {
-	border-bottom: 5px solid #63C2D0;
-	padding-bottom: 4px;
-}
-
-.navigation img {
-	width: 25px;
-	margin: 13px 0;
-	float: left;
 }
 
 #menuU {
@@ -99,17 +97,15 @@ h2 {
 }
 
 #usermenu {
-	width: 115px;
+	width: 100px;
 	float: left;
 	margin: 10px 5px 0;
 	border: none;
-	background: url(../images/button_down.png) 93px 4px no-repeat #630E35;
+	background: url(../images/button_down.png) 95px 4px no-repeat #630E35;
 	color: #FFF;
 	padding: 4px 7px;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
 	border-radius: 3px;
+	list-style: none;
 }
 
 /**** CONTENIDO ****/
@@ -375,16 +371,24 @@ h2 {
 	padding-top: 8px;
 }
 
-#typepostList select {
+.typepostSel {
 	width: 195px;
 	height: 25px;
-	background: url(../images/report_icon.png) 2px no-repeat #F0F0F0;
+	background: url(../images/button_down_gray.png) 170px center no-repeat #F0F0F0;
 	border-radius: 6px;
 	border: 1px solid #A5A5A5;
-	/*-moz-appearance: none;
-	 -webkit-appearance: none;
-	 appearance: none;*/
-	text-indent: 25px;
+	text-indent: 5px;
+	list-style: none;
+}
+
+.typepostSel li {
+	padding-top: 4px;
+	padding-left: 3px;
+	color: #B71C4E;
+}
+
+.typepostSel img {
+	margin-top: -3px;
 }
 
 #postshBtn {
@@ -545,12 +549,17 @@ h2 {
 	float: right;
 }
 
-.post_actions select {
-	background: none;
+.post_actions .post_mas {
+	background: url(../images/button_down_gray.png) 43px center no-repeat transparent;
 	height: 20px;
 	border: 1px solid #CCCCCC;
 	border-radius: 4px;
 	width: 65px;
+	list-style: none;
+}
+
+.post_actions .post_mas li {
+	padding: 2px 5px;
 }
 
 .postCommts {

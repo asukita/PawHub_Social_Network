@@ -102,7 +102,6 @@
 			$(document).ready(function() {
 				var br = BrowserDetect.browser;
 				if (br == 'Explorer') {
-					$('#typepostSel').css('padding-left', '25px');
 					$('.publifrm_activities').css('width', '280px');
 				}
 				
@@ -111,10 +110,8 @@
 				}
 				
 				if(br == 'Firefox'){
-					$('.navigation .active').css('padding-bottom', '5px');
-					$('#typepostSel').css('text-indent', '0');
-					$('#typepostSel').css('padding-left', '25px');
-					$('#typepostSel').css('padding-top', '3px'); 
+					
+					$('.typepostSel img').css('margin-top', '-11px');
 					$('.userimg_post').css('margin-top', '8px');
 					$('.user_name').css('padding-top', '8px');
 					$('.user_msg').css('margin-top', '-4px'); 
